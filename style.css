@@ -166,3 +166,53 @@ section {
     font-size: 1.5em; 
    
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar > .nav-opts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text {
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-bar input {
+        width: 80%;
+    }
+
+    .search-bar button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        height: 50vh;
+    }
+
+    .hero-text {
+        font-size: 1.5em;
+    }
+
+    .search-text h1 {
+        font-size: 2em;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%;
+    }
+}
